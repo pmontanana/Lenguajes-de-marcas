@@ -6,7 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3</title>
 </head>
-<body>
-    
+<body bgcolor="gray">
+    <h2>Ejercicio 3</h2>
+    <h1 style="color: darkgreen;">Rellena tu CV</h1>
+
+    <fieldset>
+        <legend><h4>Datos personales</h4></legend>
+
+        <label for="provincia">Provincia</label> <br>
+        <select name="provincia" id="provincia">
+            <option value="provincia" disabled>- selecciona -</option>
+            <option value="provincia">Albacete</option>
+            <option value="provincia">Cuenca</option>
+            <option value="provincia">Guadalajara</option>
+            <option value="provincia">Ciudad Real</option>
+            <option value="provincia">Toledo</option>
+        </select>
+
+<br><br>
+        
+        <label for="date">Fecha de nacimiento</label>
+        <br>
+        <input type="number" name="date"> 
+        de 
+        <select name="date" id="date">
+            <option value="date">Enero</option>
+            <option value="date">Febrero</option>
+            <option value="date">Marzo</option>
+            <option value="date">Abril</option>
+            <option value="date">Mayo</option>
+            <option value="date">Junio</option>
+            <option value="date">Julio</option>
+            <option value="date">Agosto</option>
+            <option value="date">Septiembre</option>
+            <option value="date">Octubre</option>
+            <option value="date">Noviembre</option>
+            <option value="date">Diciembre</option>
+        </select>
+        de
+        <input type="number" name="date">
+
+<br><br>
+
+        <label for="temas">Temas de interes</label>
+        <br>
+        <select size="5" name="temas" id="temas">
+            <option value="temas">Tema ejemplo 1</option>
+            <option value="temas">Tema ejemplo 2</option>
+            <option value="temas">Tema ejemplo 3</option>
+            <option value="temas">Gestion de proyectos</option>
+            <option value="temas">Hardware, redes y seguridad</option>
+            <option value="temas">Helpdesk</option>
+            <option value="temas">Sistemas</option>
+            <option value="temas">Telecomunicaciones</option>
+        </select>
+    </fieldset>
+
+<br><br>
+
+    <button><a href="Index.html">Volver</a></button>
 </body>
 </html>
