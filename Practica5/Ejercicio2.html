@@ -7,6 +7,62 @@
     <title>Ejercicio 2</title>
 </head>
 <body>
-    
+    <h2>Ejercicio 2</h2>
+    <h1>Informacion sobre el producto</h1>
+    <fieldset>
+       <legend style="text-align: center;"><h1 style="background-color: lightgray; color: white;">Datos basicos</h1></legend>
+
+       <label for="nombre">Nombre</label>
+       <br>
+       <input type="text" name="nombre">
+
+        <br><br>
+
+       <label for="Descripcion">Descripcion</label>
+       <br>
+       <textarea name="Descripcion" id="Descripcion" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+       <label for="foto">Foto</label>
+       <input type="file" name="foto">
+       <br><br>
+       <input type="checkbox"> Añadir contador de visitas
+
+    </fieldset>
+       
+    <fieldset>
+        <legend style="text-align: center;"><h1 style="background-color: lightgray; color: white;">Datos economicos</h1></legend>
+
+        <label for="precio">Precio</label>
+        <input type="number" name="precio">€
+ 
+         <br>
+ 
+        <label for="Impuestos">Impuestos</label>     
+        <select name="Impuestos" id="Impuestos">
+            <option value="4%">4%</option>
+            <option value="7%">7%</option>
+            <option value="16%">16%</option>
+            <option value="25%">25%</option>
+        </select>
+ 
+         <br><br>
+ 
+        <label for="promocion">Promocion</label>
+        <br>
+        <input type="radio" name="promocion">
+        <label for="promocion">Ninguno</label>
+        <br>
+        <input type="radio" name="promocion">
+        <label for="promocion">Transporte gratuito</label>
+        <br>
+        <input type="radio" name="promocion">
+        <label for="promocion">Descuento 5%</label>
+    </fieldset>
+
+    <br>
+
+    <button><a href="Index.html">Volver</a></button>
 </body>
 </html>
