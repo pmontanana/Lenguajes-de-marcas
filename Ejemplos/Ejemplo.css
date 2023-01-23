@@ -1,0 +1,7 @@
+table th:hover {
+    background: #123; font-size: 10px;
+}
+
+table td:hover {
+    background-color: yellow;
+}
