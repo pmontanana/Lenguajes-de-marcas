@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
     
-    <title>Pagina</title>
-    
+    <title>Pop-Up</title>
+    <link rel="stylesheet" href="popup.css">
+
 </head>
     <body>
-        <label for="edad">Introduce tu edad</label>
-        <br>
-        <input type="number" name="edad" id="edad" min="1" max="99">
-        <label for="enviar"></label>
-        <br>
-        <input type="button" name="edad" id="enviar" value="Enviar" onclick="boton()">
+        <fieldset>
+            <legend>
+                <label for="edad" id="label1">Introduce tu edad</label>
+                
+            </legend>
+            <input type="number" value="-1" name="edad" id="edad">
+            <label for="enviar"></label>
+            <br>
+            
+            <input type="button" name="edad" id="enviar" value="Enviar" onclick="boton()">
+        </fieldset>
+
         <script type="text/javascript" src="popup.js"></script>
+        
 
     
     </body>
