@@ -26,11 +26,11 @@ function Script3(){
   let num = parseFloat(prompt("Pon un numero:"));
 
   if (num >= 0) {
-    alert("El número es positivo.");
-    document.write("El número es positivo.");
+    alert("El número es positivo");
+    document.write("El número es positivo");
   } else {
-    alert("El número es negativo.");
-    document.write("El número es negativo.");
+    alert("El número es negativo");
+    document.write("El número es negativo");
   }
 }
 
@@ -38,16 +38,21 @@ function Script4(){
   let edad = parseInt(prompt("Pon tu edad:"));
 
   if (edad >= 18) {
-    alert("Usted es mayor de edad.");
-    document.write("Usted es mayor de edad.");
+    alert("Usted es mayor de edad");
+    document.write("Usted es mayor de edad");
   } else {
-    alert("Usted es menor de edad.");
-    document.write("Usted es menor de edad.");
+    alert("Usted es menor de edad");
+    document.write("Usted es menor de edad");
   }
 }
 
 function Script5(){
-  let nota = parseInt(prompt(""))
+  let nota = parseInt(prompt("Pon tu nota:"))
+
+  if (nota <= 4.99){
+    alert("SUSPENSO")
+    document.write("SUSPENSO")
+  }
 }
 
 function Script6(){
