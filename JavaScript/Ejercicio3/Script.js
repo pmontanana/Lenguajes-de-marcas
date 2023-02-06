@@ -81,11 +81,53 @@ function Script6(){
 }
 
 function Script7(){
-  
+  let edad = parseInt(prompt("Por favor ingrese su edad:"));
+  let mensaje;
+
+  switch (edad) {
+    case 0:
+      mensaje = "Acaba de nacer hace poco. No ha cumplido el año.";
+      break;
+    case 18:
+      mensaje = "Está justo en la mayoría de edad.";
+      break;
+    case 65:
+      mensaje = "Está en la edad de jubilación.";
+      break;
+    default:
+      mensaje = "La edad no es crítica.";
+}
+
+alert(mensaje);
+document.write(mensaje);
 }
 
 function Script8(){
-  
+  let tipMot = parseInt(prompt("Ingresa un tipo de motor(1, 2, 3 o 4):"));
+  let mensaje;
+
+  switch (tipMot){
+    case 0:
+      mensaje = "No hay establecido un valor definido para el tipo de bomba"
+      break;
+    case 1:
+      mensaje = "La bomba es una bomba de agua"
+      break;
+    case 2:
+      mensaje = "La bomba es una bomba de gasolina"
+      break;
+    case 3:
+      mensaje = "La bomba es una bomba de hormigon"
+      break;
+    case 4:
+      mensaje = "La bomba es una bomba de pasta alimenticia"
+      break;
+    default:
+      mensaje = "No existe un valor valido para tipo de bomba"
+  }
+
+  alert(mensaje);
+  document.write(mensaje);
 }
 
 function Script9(){
