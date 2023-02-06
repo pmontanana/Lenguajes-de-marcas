@@ -1,6 +1,6 @@
 function Script1(){
-  let num1 = parseFloat(prompt("Ingrese el primer número:"));
-  let num2 = parseFloat(prompt("Ingrese el segundo número:"));
+  let num1 = parseFloat(prompt("Pon el primer número:"));
+  let num2 = parseFloat(prompt("Pon el segundo número:"));
   
   if (num1 > num2) {
     alert("El número mayor es: " + num1 + "\nEl número menor es: " + num2);
@@ -12,9 +12,9 @@ function Script1(){
 }
 
 function  Script2(){
-  let num1 = parseFloat(prompt("Ingrese el primer número:"));
-  let num2 = parseFloat(prompt("Ingrese el segundo número:"));
-  let num3 = parseFloat(prompt("Ingrese el tercer número:"));
+  let num1 = parseFloat(prompt("Pon el primer número:"));
+  let num2 = parseFloat(prompt("Pon el segundo número:"));
+  let num3 = parseFloat(prompt("Pon el tercer número:"));
 
   let mayor = Math.max(num1, num2, num3);
 
@@ -23,7 +23,7 @@ function  Script2(){
 }
 
 function Script3(){
-  let num = parseFloat(prompt("Ingrese un número:"));
+  let num = parseFloat(prompt("Pon un numero:"));
 
   if (num >= 0) {
     alert("El número es positivo.");
@@ -35,7 +35,7 @@ function Script3(){
 }
 
 function Script4(){
-  let edad = parseInt(prompt("Ingrese su edad:"));
+  let edad = parseInt(prompt("Pon tu edad:"));
 
   if (edad >= 18) {
     alert("Usted es mayor de edad.");
@@ -47,7 +47,7 @@ function Script4(){
 }
 
 function Script5(){
-
+  let nota = parseInt(prompt(""))
 }
 
 function Script6(){
