@@ -52,11 +52,32 @@ function Script5(){
   if (nota <= 4.99){
     alert("SUSPENSO")
     document.write("SUSPENSO")
+  }else{
+    alert("APROBADO")
+    document.write("APROBADO")
   }
 }
 
 function Script6(){
+  let edad = parseInt(prompt("Por favor ingrese su edad:"));
+  let mensaje;
   
+  if (edad < 0 || edad > 100) {
+    mensaje = "EDAD ERRONEA";
+  } else if (edad >= 0 && edad < 2) {
+    mensaje = "Eres un bebé";
+  } else if (edad >= 2 && edad < 10) {
+    mensaje = "Eres un niño";
+  } else if (edad >= 10 && edad < 18) {
+    mensaje = "Eres adolescente";
+  } else if (edad >= 18 && edad < 65) {
+    mensaje = "Eres adulto";
+  } else if (edad >= 65) {
+    mensaje = "Eres mayor";
+  }
+  
+  alert(mensaje);
+  document.write(mensaje);
 }
 
 function Script7(){
