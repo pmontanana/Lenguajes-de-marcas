@@ -131,7 +131,34 @@ function Script8(){
 }
 
 function Script9(){
-  
+  let mascota = prompt("¿Que mascota tienes?:");
+
+  switch (mascota) {
+    case "lagarto":
+      alert("Tengo un lagarto");
+      document.write("Tengo un lagarto <br> <img src='Script9Img/lagarto.jpg' alt='Fotografía de un lagarto' width='200px' height='200px'>");
+      break;
+    case "perro":
+      alert("Tengo un perro");
+      document.write("Tengo un perro <br> <img src='Script9Img/perro.jpg' alt='Fotografía de un perro' width='250px' height='200px'>");
+      break;
+    case "gato":
+      alert("Tengo un gato");
+      document.write("Tengo un gato <br> <img src='Script9Img/gato.png' alt='Fotografía de un gato' width='250px' height='200px'>");
+      break;
+    case "serpiente":
+      alert("Tengo una serpiente");
+      document.write("Tengo una serpiente <br> <img src='Script9Img/serpiente.jpg' alt='Fotografía de una serpiente' width='250px' height='200px'>");
+      break;
+    case "loro":
+      alert("Tengo un loro");
+      document.write("Tengo un loro <br> <img src='Script9Img/loro.jpeg' alt='Fotografía de un loro' width='200px' height='200px'>");
+      break;
+    default:
+      alert("No tengo mascota");
+      document.write("No tengo mascota");
+      break;
+  }
 }
 
 function Script10(){
