@@ -212,5 +212,65 @@ function Script10(){
 }
 
 function Script11(){
-  
+let NumEmple = prompt("Ingresa el nombre del empleado: ");
+let salario = parseFloat(prompt("Ingresa el salario del empleado: "));
+let NumDep = parseInt(prompt("Ingresa el número de departamento: "));
+
+let IncreSalar;
+let newSalary;
+
+switch (NumDep) {
+  case 10:
+    IncreSalar = salario * 1;
+    newSalary = salario + IncreSalar;
+    document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 100%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
+    break;
+  case 20:
+    IncreSalar = salario * 0.05;
+    newSalary = salario + IncreSalar;
+    document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 5%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
+    break;
+  case 30:
+    IncreSalar = salario * 0.04;
+    newSalary = salario + IncreSalar;
+    document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 4%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
+    break;
+  case 40:
+  case 41:
+  case 42:
+  case 43:
+  case 44:
+  case 45:
+  case 46:
+  case 47:
+  case 48:
+  case 49:
+  case 50:
+  case 51:
+  case 52:
+  case 53:
+  case 54:
+  case 55:
+  case 56:
+  case 57:
+  case 58:
+  case 59:
+  case 60:
+  case 61:
+  case 62:
+  case 63:
+  case 64:
+  case 65:
+  case 66:
+  case 67:
+  case 68:
+  case 69:
+  case 70:
+    IncreSalar = salario * 0.75;
+    newSalary = salario + IncreSalar;
+    document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 75%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
+    break;
+  default:
+    document.write("El número de departamento ingresado es inválido");
+ }
 }
