@@ -2,4 +2,9 @@ input{
     border-radius: 20px;
     border-width: 1px;
     border-color: blue;
+    
+}
+input:hover{
+    background-color: aqua;
+    font-size: 15px;
 }
