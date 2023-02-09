@@ -162,7 +162,53 @@ function Script9(){
 }
 
 function Script10(){
-  let 
+  let mes = parseInt(prompt("Elige un mes del 1 al 12"));
+  let productividad;
+
+  switch (mes) {
+    case 1:
+      productividad = "Enero" + "\n115"
+      break;
+    case 2:
+      productividad = "Febrero" + "\n115"
+      break;
+    case 3:
+      productividad = "Marzo" + "\n115"
+      break;
+    case 4:
+      productividad = "Abril" + "\n117"
+      break;
+    case 5:
+      productividad = "Mayo" + "\n117"
+      break;
+    case 6:
+      productividad = "Junio" + "\n117"
+      break;
+    case 7:
+      productividad = "Julio" + "\n100"
+      break;
+    case 8:
+      productividad = "Agosto" + "\n100"
+      break;
+    case 9:
+      productividad = "Septiembre" + "\n120"
+      break;
+    case 10:
+      productividad = "Octubre" + "\n120"
+      break;
+    case 11:
+      productividad = "Noviembre" + "\n120"
+      break;
+    case 12:
+      productividad = "Diciembre" + "\n121"
+      break;
+    default:
+      productividad = "Error de mes"
+      break;
+  }
+
+  alert(productividad);
+  document.write(productividad);
 }
 
 function Script11(){
