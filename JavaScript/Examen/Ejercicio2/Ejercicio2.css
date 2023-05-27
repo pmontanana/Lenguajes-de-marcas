@@ -1,0 +1,17 @@
+.vacido{
+    color: white;
+    background-color: red;
+    font-size: 30px;
+}
+
+.corto{
+    color: blue;
+    background-color: lightblue;
+    font-size: 25px;
+}
+
+.todook{
+    color: green;
+    background-color: lightgreen;
+    font-size: 20px;
+}

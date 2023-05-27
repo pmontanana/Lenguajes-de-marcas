@@ -1,7 +1,7 @@
-function Script1(){
+function Script1() {
   let num1 = parseFloat(prompt("Pon el primer número:"));
   let num2 = parseFloat(prompt("Pon el segundo número:"));
-  
+
   if (num1 > num2) {
     alert("El número mayor es: " + num1 + "\nEl número menor es: " + num2);
     document.write("El número mayor es: " + num1 + "<br>El número menor es: " + num2);
@@ -11,7 +11,7 @@ function Script1(){
   }
 }
 
-function  Script2(){
+function Script2() {
   let num1 = parseFloat(prompt("Pon el primer número:"));
   let num2 = parseFloat(prompt("Pon el segundo número:"));
   let num3 = parseFloat(prompt("Pon el tercer número:"));
@@ -22,7 +22,7 @@ function  Script2(){
   document.write("El número mayor es: " + mayor);
 }
 
-function Script3(){
+function Script3() {
   let num = parseFloat(prompt("Pon un numero:"));
 
   if (num >= 0) {
@@ -34,7 +34,7 @@ function Script3(){
   }
 }
 
-function Script4(){
+function Script4() {
   let edad = parseInt(prompt("Pon tu edad:"));
 
   if (edad >= 18) {
@@ -46,22 +46,22 @@ function Script4(){
   }
 }
 
-function Script5(){
+function Script5() {
   let nota = parseInt(prompt("Pon tu nota:"))
 
-  if (nota <= 4.99){
+  if (nota <= 4.99) {
     alert("SUSPENSO")
     document.write("SUSPENSO")
-  }else{
+  } else {
     alert("APROBADO")
     document.write("APROBADO")
   }
 }
 
-function Script6(){
+function Script6() {
   let edad = parseInt(prompt("Por favor ingrese su edad:"));
   let mensaje;
-  
+
   if (edad < 0 || edad > 100) {
     mensaje = "EDAD ERRONEA";
   } else if (edad >= 0 && edad < 2) {
@@ -75,12 +75,12 @@ function Script6(){
   } else if (edad >= 65) {
     mensaje = "Eres mayor";
   }
-  
+
   alert(mensaje);
   document.write(mensaje);
 }
 
-function Script7(){
+function Script7() {
   let edad = parseInt(prompt("Por favor ingrese su edad:"));
   let mensaje;
 
@@ -96,17 +96,17 @@ function Script7(){
       break;
     default:
       mensaje = "La edad no es crítica.";
+  }
+
+  alert(mensaje);
+  document.write(mensaje);
 }
 
-alert(mensaje);
-document.write(mensaje);
-}
-
-function Script8(){
+function Script8() {
   let tipMot = parseInt(prompt("Ingresa un tipo de motor(1, 2, 3 o 4):"));
   let mensaje;
 
-  switch (tipMot){
+  switch (tipMot) {
     case 0:
       mensaje = "No hay establecido un valor definido para el tipo de bomba"
       break;
@@ -130,7 +130,7 @@ function Script8(){
   document.write(mensaje);
 }
 
-function Script9(){
+function Script9() {
   let mascota = prompt("¿Que mascota tienes?:");
 
   switch (mascota) {
@@ -161,116 +161,75 @@ function Script9(){
   }
 }
 
-function Script10(){
+function Script10() {
   let mes = parseInt(prompt("Elige un mes del 1 al 12"));
   let productividad;
+  let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+  let mensaje;
 
   switch (mes) {
     case 1:
-      productividad = "Enero" + "\n115"
-      break;
     case 2:
-      productividad = "Febrero" + "\n115"
-      break;
     case 3:
-      productividad = "Marzo" + "\n115"
+      mensaje = meses[mes-1] + " 115";
       break;
     case 4:
-      productividad = "Abril" + "\n117"
-      break;
     case 5:
-      productividad = "Mayo" + "\n117"
-      break;
     case 6:
-      productividad = "Junio" + "\n117"
+      mensaje = meses[mes-1] + " 117";
       break;
     case 7:
-      productividad = "Julio" + "\n100"
-      break;
     case 8:
-      productividad = "Agosto" + "\n100"
+      mensaje = meses[mes-1] + " 100";
       break;
     case 9:
-      productividad = "Septiembre" + "\n120"
-      break;
     case 10:
-      productividad = "Octubre" + "\n120"
-      break;
     case 11:
-      productividad = "Noviembre" + "\n120"
+      mensaje = meses[mes-1] + " 120";
       break;
     case 12:
-      productividad = "Diciembre" + "\n121"
+      mensaje = meses[mes-1] + " 121";
       break;
     default:
-      productividad = "Error de mes"
+      mensaje = "Error de mes";
       break;
   }
-
-  alert(productividad);
-  document.write(productividad);
+  
+  alert(mensaje);
+  document.write(mensaje);
 }
 
-function Script11(){
-let NumEmple = prompt("Ingresa el nombre del empleado: ");
-let salario = parseFloat(prompt("Ingresa el salario del empleado: "));
-let NumDep = parseInt(prompt("Ingresa el número de departamento: "));
+function Script11() {
+  let NumEmple = prompt("Ingresa el nombre del empleado: ");
+  let salario = parseFloat(prompt("Ingresa el salario del empleado: "));
+  let NumDep = parseInt(prompt("Ingresa el número de departamento: "));
+  let IncreSalar;
+  let newSalary;
 
-let IncreSalar;
-let newSalary;
+  switch (NumDep) {
+    case 10:
+      IncreSalar = salario * 1;
+      newSalary = salario + IncreSalar;
+      document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 100%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
+      break;
+    case 20:
+      IncreSalar = salario * 0.05;
+      newSalary = salario + IncreSalar;
+      document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 5%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
+      break;
+    case 30:
+      IncreSalar = salario * 0.04;
+      newSalary = salario + IncreSalar;
+      document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 4%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
+      break;
+    default:
+      if (numDep >= 40 && numDep <= 70) {
+        IncreSalar = salario * 0.75;
+        newSalary = salario + IncreSalar;
+        document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 75%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
+      } else {
 
-switch (NumDep) {
-  case 10:
-    IncreSalar = salario * 1;
-    newSalary = salario + IncreSalar;
-    document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 100%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
-    break;
-  case 20:
-    IncreSalar = salario * 0.05;
-    newSalary = salario + IncreSalar;
-    document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 5%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
-    break;
-  case 30:
-    IncreSalar = salario * 0.04;
-    newSalary = salario + IncreSalar;
-    document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 4%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
-    break;
-  case 40:
-  case 41:
-  case 42:
-  case 43:
-  case 44:
-  case 45:
-  case 46:
-  case 47:
-  case 48:
-  case 49:
-  case 50:
-  case 51:
-  case 52:
-  case 53:
-  case 54:
-  case 55:
-  case 56:
-  case 57:
-  case 58:
-  case 59:
-  case 60:
-  case 61:
-  case 62:
-  case 63:
-  case 64:
-  case 65:
-  case 66:
-  case 67:
-  case 68:
-  case 69:
-  case 70:
-    IncreSalar = salario * 0.75;
-    newSalary = salario + IncreSalar;
-    document.write(`Nombre del empleado: ${NumEmple}<br>Salario: $${salario}<br>Porcentaje de subida: 75%<br>Subida de salario: $${IncreSalar}<br>Nuevo salario: $${newSalary}`);
-    break;
-  default:
-    document.write("El número de departamento ingresado es inválido");
- }
+        document.write("El número de departamento ingresado es inválido");
+      }
+  }
 }
