@@ -5,7 +5,6 @@ function validarDatos() {
     let curso = document.getElementById("Curso").value;
     let modulos = document.getElementsByName("Modulos");
 
-
     if (nombre == "") {
         alert("Escribe un nombre");
         return;
@@ -22,7 +21,13 @@ function validarDatos() {
         alert("Debes elegir un curso");
         return;
     }
-    if (modulos == undefined) {
+    let matriculas = [];
+    for (let i = 0; i < modulos.length; i++) {
+        if (modulos[i].checked) {
+            matriculas.push(modulos[i].id);
+        }
+    }
+    if (matriculas.length == 0) {
         alert("Debes elegir al menos un módulo");
         return;
     }
@@ -67,7 +72,7 @@ function generarResumen() {
     document.getElementById("NombreCiclo").value = ciclo;
     for (i = 0; i < modulos.length; i++) {
         if (modulos[i].checked) {
-            values.push(modulos[i].value);
+            values.push(modulos[i].id);
             nModulos++;
         }
     }

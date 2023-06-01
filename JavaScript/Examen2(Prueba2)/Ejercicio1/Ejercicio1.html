@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script type="text/javascript" src="Ejercicio1.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend style="text-align: center;">FORMULARIO DE MATRICULA</legend>
+        <form action="" method="post">
+            <fieldset>
+                
+                <legend>**Datos Personales**</legend>
+
+                <label for="Nombre">Nombre*:</label>
+                <input type="text" id="Nombre" name="Nombre" size="50" maxlength="20">
+                <br>
+                <br>
+                <label for="Apellidos">Apellidos*:</label>
+                <input type="text" id="Apellidos" name="Apellidos" size="40" maxlength="20">
+                <br>
+                <br>
+                <label for="Sexo">Sexo:</label>
+                <input type="radio" id="Sexo" name="Sexo" value="Hombre" checked>
+                <label for="Sexo">Hombre</label>
+                <input type="radio" id="Sexo" name="Sexo" value="Mujer">
+                <label for="Sexo">Mujer</label>
+                <br>
+                <br>
+                <label for="Edad">Edad*:</label>
+                <input type="number" id="Edad" name="Edad" size="5" min="15" value="0">
+                <br>
+                <br>
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" size="51" maxlength="30">
+            </fieldset>
+
+            <fieldset>
+                <legend>**Curso Academico**</legend>
+                <label for="Curso">Curso*:</label>
+                <select name="Curso" id="Curso">
+                    <option value="Default">Elige una opcion...</option>
+                    <option value="1ºSMR">1ºSMR</option>
+                    <option value="2ºSMR">2ºSMR</option>
+                    <option value="1ºDAM">1ºDAM</option>
+                    <option value="2ºDAM">2ºDAM</option>
+                    <option value="1ºASIR">1ºASIR</option>
+                    <option value="2ºASIR">2ºASIR</option>
+                </select>
+                <br>
+                <br>
+                <label for="Turno">Turno*:</label>
+                <input type="radio" id="Turno" name="Turno" value="Diurno" checked>
+                <label for="Turno">Diurno</label>
+                <input type="radio" id="Turno" name="Turno" value="Vespertino">
+                <label for="Turno">Vespertino</label>
+                <br>
+                <br>
+                <label for="Modulos">Modulos matriculados*:</label>
+                <br>
+                <input type="checkbox" id="LMSGI" name="Modulos" value="LMSGI">
+                <label for="LMSGI">LMSGI</label>
+                <input type="checkbox" id="AWEB" name="Modulos" value="AWEB">
+                <label for="AWEB">AWEB</label>
+                <input type="checkbox" id="PMDM" name="Modulos" value="PMDM">
+                <label for="PMDM">PMDM</label>
+                <input type="checkbox" id="PROG" name="Modulos" value="PROG">
+                <label for="PROG">PROG</label>
+                <input type="checkbox" id="FOL" name="Modulos" value="FOL">
+                <label for="FOL">FOL</label>
+                <input type="checkbox" id="EIE" name="Modulos" value="EIE">
+                <label for="EIE">EIE</label>
+                <input type="checkbox" id="PSP" name="Modulos" value="PSP">
+                <label for="PSP">PSP</label>
+                <input type="checkbox" id="AD" name="Modulos" value="AD">
+                <label for="AD">AD</label>
+                <input type="checkbox" id="DI" name="Modulos" value="DI">
+                <label for="DI">DI</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>**Operaciones**</legend>
+                <input type="reset" value="LIMPIAR FORMULARIO">
+                <input type="button" onclick="validar()" value="VALIDAR DATOS">
+                <input type="button" onclick="resumen()" value="GENERAR RESUMEN">
+            </fieldset>
+        </form>
+        <form action="POST">
+            <fieldset>
+                <legend>RESUMEN DE LA MATRICULA</legend>
+                <label for="NombreyApellidos">Nombre y Apellidos:</label>
+                <input type="text" id="NombreyApellidos" name="NombreyApellidos">
+                <br>
+                <br>
+                <label for="EdadDevuelta">Edad:</label>
+                <input type="number" id="EdadDevuelta" name="EdadDevuelta">
+                <br>
+                <br>
+                <label for="CursoyTurno">Curso y Turno:</label>
+                <input type="text" id="CursoyTurno" name="CursoyTurno">
+                <br>
+                <br>
+                <label for="NombreCiclo">Nombre del ciclo:</label>
+                <input type="text" id="NombreCiclo" name="NombreCiclo" size="50">
+                <br>
+                <br>
+                <label for="Precio">PRECIO A PAGAR POR LA MATRICULA:</label>
+                <input type="text" id="Precio" name="Precio">
+                <br>
+                <br>
+                <label for="Matriculados">Modulos Matriculados:</label>
+                <input type="text" id="Matriculados" name="Matriculados" size="50">
+                <br>
+                <br>
+                <input type="submit" id="EnviarDatos" name="EnviarDatos" value="ENVIAR DATOS">
+                
+            </fieldset>
+        </form>
+        </fieldset>
+    
+</body>
+</html>
